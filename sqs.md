@@ -1,0 +1,33 @@
+# SQS (Simple Queue Service)
+
+- queuing system that provides fully managed, highly available message queue
+- architecture
+  - a message is added
+  - a message is retrieved
+- message
+  - 256 KB of data max
+- polling types
+  - short polling
+    - single API call
+    - up to a max of 10 messages
+    - not cost effective
+  - long polling
+    - same process - single API call but added wait time
+      - WaitTimeSeconds
+    - more efficient and cost effective
+- queue types
+  - standard
+    - distributed and scalable (unlimited message volume)
+    - order is not guaranteed
+    - messages delivered more than once
+    - great for performance
+  - FIFO
+    - First in, First Out
+    - order is guaranteed
+    - messages only delivered once
+    - throughput limit - 300 message w/o batching and 3,000 messages with batching
+- architecture
+  - decouple
+    - SQS is great when you need to de-couple two different parts of a system
+  - asynchronous messaging
+    - the ability to have independent scaling of your application

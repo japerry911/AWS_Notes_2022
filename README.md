@@ -16,3 +16,4 @@
     - write some templates and do hands-on labs for them on ACG
   - IAM
     - general
+  - AWS lambdas

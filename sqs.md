@@ -31,3 +31,6 @@
     - SQS is great when you need to de-couple two different parts of a system
   - asynchronous messaging
     - the ability to have independent scaling of your application
+- dead-letter queue
+  - isolate failing messages
+- integrating with AWS lambda
